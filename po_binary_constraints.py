@@ -16,7 +16,6 @@ Given constants:
 """
 
 # TODO: Initialize the nonlinear model object called model
-# Hint: Remember to import the required package at the top of the file
 
 
 # 10 stocks to consider 
