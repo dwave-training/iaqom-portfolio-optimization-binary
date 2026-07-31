@@ -6,7 +6,7 @@ Requirements:
     Objective: Maximize the total return of the portfolio.
     Constraints: 
         - Select a certain number of stocks for the portfolio.
-        - The cost of the purchased stocks should be under a certain budget.
+        - The cost of the purchased stocks cannot exceed a certain budget.
 Given constants:
     stockcodes (list): List of stocks under consideration
     average_returns (list): List of average monthly returns for each stock in stockcodes
@@ -72,19 +72,19 @@ print("\nPart 3 solution: Submit the portfolio optimization problem to the Strid
 # TODO: Return the best solution for the binary variable symbol and store it in stocks_state.
 
 
-# TODO: Return the objective value of the optimal solution and store it objective_value
+# TODO: Return the objective value of the optimal solution and store it in objective_value.
 
 
 selected_indices = [i for i, val in enumerate(stocks_state) if round(val) == 1]
 selected_stockcodes = [stockcodes[i] for i in selected_indices]
 
-print(f"Objective Value of the optimal solution: {objective_value:.6f}")
+print(f"Objective value of the optimal solution: {objective_value:.6f}")
 print(f"Stocks (at state 0): {stocks_state}")
 print(f"Selected indices: {selected_indices}")
 print(f"Selected stocks: {selected_stockcodes}")
 
 # Check the feasibility of the optimal solution
-# TODO: Determine the feasibility status of the optimal solution, and store it in model_feasibility
+# TODO: Determine the feasibility status of the best solution and store it in model_feasibility.
 
 
 print(f"Is the model feasible at state 0? {model_feasibility}")

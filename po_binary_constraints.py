@@ -6,7 +6,7 @@ Requirements:
     Objective: Maximize the total return of the portfolio.
     Constraints: 
         - Select a certain number of stocks for the portfolio.
-        - The cost of the purchased stocks should be under a certain budget.
+        - The cost of the purchased stocks cannot exceed a certain budget.
 Given constants:
     stockcodes (list): List of stocks under consideration
     average_returns (list): List of average monthly returns for each stock in stockcodes
