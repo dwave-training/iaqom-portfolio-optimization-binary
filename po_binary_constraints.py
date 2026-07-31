@@ -33,24 +33,24 @@ num_stocks_to_buy = 2
 # Set the budget for the purchase
 purchase_budget = 80.0
 
-# TODO: Add the constants to the model object
-# Hint: Add the constant average_returns to the model object and name it returns
-# Hint: Add the constant num_stocks_to_buy to the model object and name it capacity
+# TODO: Add the constants to the model object.
+# Hint: Add the constant average_returns to the model object and name it returns.
+# Hint: Add the constant num_stocks_to_buy to the model object and name it capacity.
 
 
-# TODO: Add the constants to the model object
-# Hint: Add the constant daily_prices to the model object and name it prices
-# Hint: Add the constant purchase_budget to the model object and name it budget
+# TODO: Add the constants to the model object.
+# Hint: Add the constant daily_prices to the model object and name it prices.
+# Hint: Add the constant purchase_budget to the model object and name it budget.
 
 
-# TODO: Define your binary variables and store them in stocks
-# Hint: use len() to get the total number of binary variables
+# TODO: Define the binary variables and store them in stocks.
+# Hint: use len() to get the total number of binary variables.
 
 
-# TODO: Set the objective function: maximize the total return of the portfolio
+# TODO: Set the objective function: maximize the total return of the portfolio.
 
 
-# TODO: Add the constraint: Choose exactly a certain number of stocks
+# TODO: Add the constraint: Choose exactly a certain number of stocks.
 
 
-# TODO: # Add the constraint: The cost of the purchased stocks is less than or equal to the budget
+# TODO: # Add the constraint: The cost of the purchased stocks is less than or equal to the budget.

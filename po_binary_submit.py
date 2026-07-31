@@ -5,7 +5,7 @@
 Requirements:
     Objective: Maximize the total return of the portfolio.
     Constraints: 
-        - Select a certain number of stocks for the portfolio
+        - Select a certain number of stocks for the portfolio.
         - The cost of the purchased stocks should be under a certain budget.
 Given constants:
     stockcodes (list): List of stocks under consideration
@@ -16,7 +16,6 @@ Given constants:
 """
 
 # TODO: Initialize the nonlinear model object called model
-# Hint: Remember to import the required package at the top of the file
 
 
 # 10 stocks to consider 
@@ -34,45 +33,43 @@ num_stocks_to_buy = 2
 # Set the budget for the purchase
 purchase_budget = 80.0
 
-# TODO: Add the constants to the model object
-# Hint: Add the constant average_returns to the model object and name it returns
-# Hint: Add the constant num_stocks_to_buy to the model object and name it capacity
+# TODO: Add the constants to the model object.
+# Hint: Add the constant average_returns to the model object and name it returns.
+# Hint: Add the constant num_stocks_to_buy to the model object and name it capacity.
 
 
-# TODO: Add the constants to the model object
-# Hint: Add the constant daily_prices to the model object and name it prices
-# Hint: Add the constant purchase_budget to the model object and name it budget
+# TODO: Add the constants to the model object.
+# Hint: Add the constant daily_prices to the model object and name it prices.
+# Hint: Add the constant purchase_budget to the model object and name it budget.
 
 
-# TODO: Define your binary variables and store them in stocks
-# Hint: use len() to get the total number of binary variables
+# TODO: Define the binary variables and store them in stocks.
+# Hint: Use len() to get the total number of binary variables.
 
 
-# TODO: Set the objective function: maximize the total return of the portfolio
+# TODO: Set the objective function: maximize the total return of the portfolio.
 
 
-# TODO: Add the constraint: Choose exactly a certain number of stocks
+# TODO: Add the constraint: Choose exactly a certain number of stocks.
 
 
-# TODO: # Add the constraint: The cost of the purchased stocks is less than or equal to the budget
+# TODO: # Add the constraint: The cost of the purchased stocks is less than or equal to the budget.
 
 
-# TODO: Lock the model explicitly to prevent changes
+# TODO: Lock the model explicitly to prevent changes.
 
 
-# TODO: Instantiate the nonlinear sampler, and name it sampler
-# Hint: Remember to import the required package at the top of the file
+# TODO: Instantiate the nonlinear sampler and name it sampler.
 
 
-# TODO: Submit the nonlinear model to the nonlinear sampler
-# Hint: Use the label 'Portfolio-Binary', this label is case sensitive and uses an underscore
+# TODO: Submit the nonlinear model to the nonlinear sampler. Use the label 'Portfolio_Binary', which is case sensitive and uses an underscore.
 
 
 # Process and print solution
 print("\nPart 3 solution: Submit the portfolio optimization problem to the Stride hybrid solver using binary variables\n")
 """Read in solution returned using .state(0) and display solution."""
 
-# TODO: Return the optimal solution for the binary variable symbol and store it stocks_state
+# TODO: Return the best solution for the binary variable symbol and store it in stocks_state.
 
 
 # TODO: Return the objective value of the optimal solution and store it objective_value

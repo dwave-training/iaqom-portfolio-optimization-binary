@@ -5,7 +5,7 @@
 Requirements:
     Objective: Maximize the total return of the portfolio.
     Constraints: 
-        - Select a certain number of stocks for the portfolio
+        - Select a certain number of stocks for the portfolio.
         - The cost of the purchased stocks should be under a certain budget.
 Given constants:
     stockcodes (list): List of stocks under consideration
@@ -16,7 +16,6 @@ Given constants:
 """
 
 # TODO: Initialize the nonlinear model object called model
-# Hint: Remember to import the required package at the top of the file
 
 
 # 10 stocks to consider 
@@ -34,59 +33,59 @@ num_stocks_to_buy = 2
 # Set the budget for the purchase
 purchase_budget = 80.0
 
-# TODO: Add the constants to the model object
-# Hint: Add the constant average_returns to the model object and name it returns
-# Hint: Add the constant num_stocks_to_buy to the model object and name it capacity
+# TODO: Add the constants to the model object.
+# Hint: Add the constant average_returns to the model object and name it returns.
+# Hint: Add the constant num_stocks_to_buy to the model object and name it capacity.
 
 
-# TODO: Add the constants to the model object
-# Hint: Add the constant daily_prices to the model object and name it prices
-# Hint: Add the constant purchase_budget to the model object and name it budget
+# TODO: Add the constants to the model object.
+# Hint: Add the constant daily_prices to the model object and name it prices.
+# Hint: Add the constant purchase_budget to the model object and name it budget.
 
 
-# TODO: Define your binary variables and store them in stocks
-# Hint: use len() to get the total number of binary variables
+# TODO: Define the binary variables and store them in stocks.
+# Hint: use len() to get the total number of binary variables.
 
 
-# TODO: Set the objective function: maximize the total return of the portfolio
+# TODO: Set the objective function: maximize the total return of the portfolio.
 
 
-# TODO: Add the constraint: Choose exactly a certain number of stocks
+# TODO: Add the constraint: Choose exactly a certain number of stocks.
 
 
-# TODO: # Add the constraint: The cost of the purchased stocks is less than or equal to the budget
+# TODO: # Add the constraint: The cost of the purchased stocks is less than or equal to the budget.
 
 
 # Process and print solution
 print("\nPart 2 solution: Test the initial state of portfolio optimization using binary variables\n")
 """Read in initial state returned using .state(0) and display solution."""
 
-# TODO: Lock the model using a context manager
+# TODO: Lock the model using a context manager.
 
 
-    # TODO: Define the number of states: only 1 state will be tested 
+    # TODO: Define the number of states (test only one state) 
 
 
     # TODO: Provide the following initial state: [0,0,0,1,1,0,0,0,0,0]
     # Hint: Use the `set_state()` method to assign the specifcied state to its index. 
 
 
-    # TODO: Return the initial state for the binary variable symbol and store it stocks_state
+    # TODO: Return the initial state for the binary variable symbol and store it stocks_state.
 
 
-    # TODO: Return the objective value of the initial state and store it objective_value
+    # TODO: Return the objective value of the initial state and store it objective_value.
 
 
     selected_indices = [i for i, val in enumerate(stocks_state) if round(val) == 1]
     selected_stockcodes = [stockcodes[i] for i in selected_indices]
 
-    print(f"Objective Value of the initial state: {objective_value:.6f}")
+    print(f"Objective value of the initial state: {objective_value:.6f}")
     print(f"Stocks (at state 0): {stocks_state}")
     print(f"Selected indices: {selected_indices}")
     print(f"Selected stocks: {selected_stockcodes}")
 
-    # Check the feasibility of the initial state
-    # TODO: Determine the feasibility status of the initial state, and store it in model_feasibility
+    # Check the feasibility of the initial state.
+    # TODO: Determine the feasibility status of the initial state, and store it in model_feasibility.
 
 
     print(f"Is the model feasible at state 0? {model_feasibility}")
