@@ -1,6 +1,3 @@
-# TODO: Import any required packages
-
-
 """
 Requirements:
     Objective: Maximize the total return of the portfolio.
@@ -8,12 +5,14 @@ Requirements:
         - Select a certain number of stocks for the portfolio.
         - The cost of the purchased stocks cannot exceed a certain budget.
 Given constants:
-    stockcodes (list): List of stocks under consideration
-    average_returns (list): List of average monthly returns for each stock in stockcodes
-    daily_prices (list): List of current daily price for each stock in stockcodes
-    num_stocks_to_buy (int): Number of stocks to purchase
-    purchase_budget (float): Budget for purchase
+    stockcodes (list): List of stocks under consideration.
+    average_returns (list): List of average monthly returns for each stock in stockcodes.
+    daily_prices (list): List of current daily price for each stock in stockcodes.
+    num_stocks_to_buy (int): Number of stocks to purchase.
+    purchase_budget (float): Budget for purchase.
 """
+# TODO: Import the required package
+
 
 # TODO: Initialize the nonlinear model object called model
 
@@ -36,14 +35,11 @@ purchase_budget = 80.0
 # TODO: Add the constants to the model object.
 # Hint: Add the constant average_returns to the model object and name it returns.
 # Hint: Add the constant num_stocks_to_buy to the model object and name it capacity.
-
-
-# TODO: Add the constants to the model object.
 # Hint: Add the constant daily_prices to the model object and name it prices.
 # Hint: Add the constant purchase_budget to the model object and name it budget.
 
 
-# TODO: Define the binary variables and store them in stocks.
+# TODO: Define the binary variable and store it in stocks.
 # Hint: Use len() to get the total number of binary variables.
 
 
@@ -72,19 +68,19 @@ print("\nPart 3 solution: Submit the portfolio optimization problem to the Strid
 # TODO: Return the best solution for the binary variable symbol and store it in stocks_state.
 
 
-# TODO: Return the objective value of the optimal solution and store it in objective_value.
+# TODO: Return the objective value of the best solution and store it in objective_value.
 
 
 selected_indices = [i for i, val in enumerate(stocks_state) if round(val) == 1]
 selected_stockcodes = [stockcodes[i] for i in selected_indices]
 
-print(f"Objective value of the optimal solution: {objective_value:.6f}")
+print(f"Objective value of the best solution: {objective_value:.6f}")
 print(f"Stocks (at state 0): {stocks_state}")
 print(f"Selected indices: {selected_indices}")
 print(f"Selected stocks: {selected_stockcodes}")
 
-# Check the feasibility of the optimal solution
+# Check the feasibility of the best solution
 # TODO: Determine the feasibility status of the best solution and store it in model_feasibility.
 
 
-print(f"Is the model feasible at state 0? {model_feasibility}")
+print(f"Model feasible: {model_feasibility}")
