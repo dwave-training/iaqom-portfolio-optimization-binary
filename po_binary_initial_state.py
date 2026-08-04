@@ -66,10 +66,10 @@ print("\nPart 2 solution: Test the initial state of portfolio optimization using
     # Hint: Use the `set_state()` method to assign the specifcied state to its index. 
     
 
-    # TODO: Return the initial state for the binary variable symbol and store it stocks_state.
+    # TODO: Return the initial state for the binary variable symbol and store it in stocks_state.
     
 
-    # TODO: Return the objective value of the initial state and store it objective_value.
+    # TODO: Return the objective value of the initial state and store it in objective_value.
     
 
     selected_indices = [i for i, val in enumerate(stocks_state) if round(val) == 1]
