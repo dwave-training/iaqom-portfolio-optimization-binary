@@ -49,7 +49,7 @@ purchase_budget = 80.0
 # TODO: Add the constraint: Choose exactly a certain number of stocks.
 
 
-# TODO: # Add the constraint: The cost of the purchased stocks is less than or equal to the budget.
+# TODO: Add the constraint: The cost of the purchased stocks is less than or equal to the budget.
 
 
 # Process and print solution
@@ -60,17 +60,17 @@ print("\nPart 2 solution: Test the initial state of portfolio optimization using
 
 
     # TODO: Define the number of states (test only one state) 
-
+    
 
     # TODO: Provide the following initial state: [0,0,0,1,1,0,0,0,0,0]
     # Hint: Use the `set_state()` method to assign the specifcied state to its index. 
-
+    
 
     # TODO: Return the initial state for the binary variable symbol and store it stocks_state.
-
+    
 
     # TODO: Return the objective value of the initial state and store it objective_value.
-
+    
 
     selected_indices = [i for i, val in enumerate(stocks_state) if round(val) == 1]
     selected_stockcodes = [stockcodes[i] for i in selected_indices]
@@ -82,6 +82,6 @@ print("\nPart 2 solution: Test the initial state of portfolio optimization using
 
     # Check the feasibility of the initial state.
     # TODO: Determine the feasibility status of the initial state, and store it in model_feasibility.
-
+    
 
     print(f"Model feasible: {model_feasibility}")

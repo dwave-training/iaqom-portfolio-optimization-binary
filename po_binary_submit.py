@@ -11,7 +11,7 @@ Given constants:
     num_stocks_to_buy (int): Number of stocks to purchase.
     purchase_budget (float): Budget for purchase.
 """
-# TODO: Import the required package
+# TODO: Import any required packages
 
 
 # TODO: Initialize the nonlinear model object called model
@@ -49,7 +49,7 @@ purchase_budget = 80.0
 # TODO: Add the constraint: Choose exactly a certain number of stocks.
 
 
-# TODO: # Add the constraint: The cost of the purchased stocks is less than or equal to the budget.
+# TODO: Add the constraint: The cost of the purchased stocks is less than or equal to the budget.
 
 
 # TODO: Lock the model explicitly to prevent changes.
