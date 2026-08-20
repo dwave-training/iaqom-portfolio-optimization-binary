@@ -15,7 +15,7 @@ Given constants:
 # TODO: Import the required package
 
 
-# TODO: Initialize the nonlinear model object called model
+# TODO: Initialize the nonlinear model object called `model`
 
 
 # 10 stocks to consider 

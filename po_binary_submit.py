@@ -59,12 +59,12 @@ purchase_budget = 80.0
 # TODO: Instantiate the nonlinear sampler and name it `sampler`.
 
 
-# TODO: Submit the nonlinear model to the nonlinear sampler. Use the label "Portfolio_Binary", which is case sensitive and uses an underscore.
+# TODO: Submit the nonlinear model to the Stride hybrid solver. Use the label "Portfolio_Binary", which is case sensitive and uses an underscore.
 
 
 # Process and print solution
 print("\nPart 3 solution: Submit the portfolio optimization problem to the Stride hybrid solver using binary variables\n")
-"""Read in solution returned using `.state(0)` and display solution."""
+"""Read in the solution returned using `.state(0)` and display solution."""
 
 # TODO: Return the best solution for the binary variable symbol and store it in `stocks_state`.
 

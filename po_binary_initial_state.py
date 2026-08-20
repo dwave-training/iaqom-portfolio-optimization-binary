@@ -55,7 +55,7 @@ purchase_budget = 80.0
 
 # Process and print solution
 print("\nPart 2 solution: Test the initial state of portfolio optimization using binary variables\n")
-"""Read in initial state returned using `.state(0)` and display solution."""
+"""Read in the initial state returned using `.state(0)` and display the solution."""
 
 # TODO: Lock the model using a context manager.
 
@@ -63,7 +63,7 @@ print("\nPart 2 solution: Test the initial state of portfolio optimization using
     # TODO: Define the number of states (test only one state) 
     
 
-    # TODO: Provide the following initial state: [0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+    # TODO: Provide the following initial state: `[0, 0, 0, 1, 1, 0, 0, 0, 0, 0]`
     # Hint: Use the `set_state()` method to assign the specifcied state to its index. 
     
 

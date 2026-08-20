@@ -2,7 +2,7 @@
   https://img.shields.io/badge/Open%20in%20GitHub%20Codespaces-333?logo=github)](
   https://codespaces.new/dwave-training/iaqom-portfolio-optimization-binary?quickstart=1)
   
-# Portfolio Optimization with the Stride<sup>TM</sup> Hybrid Solver using Binary Variables 
+# Portfolio Optimization With the Stride<sup>TM</sup> Hybrid Solver Using Binary Variables 
 
 For the portfolio optimization problem, convert the mathematical formulation into a model in Python code. Use binary variables to represent the decision variable and code the problem so that it is compatible for submission to the Stride hybrid solver.
 
@@ -86,7 +86,7 @@ Open `po_binary_submit.py`.
 
    3. Instantiate the nonlinear sampler and name it `sampler`.
    
-   4. Submit the nonlinear model to the Stride hybrid solver. Give this problem a label on your Leap dashboard by using the `label` parameter. Use the label `Portfolio_Binary`. Note that this label is case sensitive and uses an underscore.
+   4. Submit the nonlinear model to the Stride hybrid solver. Label your problem "Portfolio_Binary" using the `label` parameter. This label will show in your Leap dashboard when you submit your problem. Note that this label is case sensitive and uses an underscore.
 
    5. Return the best solution for the binary variable symbol and store it in `stocks_state`.
 
