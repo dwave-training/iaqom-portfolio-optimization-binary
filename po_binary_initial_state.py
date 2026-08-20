@@ -6,15 +6,16 @@ Requirements:
         - The cost of the purchased stocks cannot exceed a certain budget.
 Given constants:
     stockcodes (list): List of stocks under consideration.
-    average_returns (list): List of average monthly returns for each stock in stockcodes.
-    daily_prices (list): List of current daily price for each stock in stockcodes.
+    average_returns (list): List of average monthly returns for each stock in `stockcodes`.
+    daily_prices (list): List of current daily price for each stock in `stockcodes`.
     num_stocks_to_buy (int): Number of stocks to purchase.
     purchase_budget (float): Budget for purchase.
 """
+
 # TODO: Import the required package
 
 
-# TODO: Initialize the nonlinear model object called model
+# TODO: Initialize the nonlinear model object called `model`
 
 
 # 10 stocks to consider 
@@ -24,7 +25,7 @@ stockcodes = ["T", "SFL", "PFE", "XOM", "MO", "VZ", "IBM", "TSLA", "GILD", "GE"]
 average_returns = [0.000286, 0.001169, -2.577749e-05, 0.000981, 0.000616, -0.000212, 0.000261, -0.002252, 0.000346, 0.001105]
 
 # Prices
-daily_prices = [27.286,5.9513,35.735,39.354,38.893,56.873,121.45,705.67,56.44,86.272]
+daily_prices = [27.286, 5.9513, 35.735, 39.354, 38.893, 56.873, 121.45, 705.67, 56.44, 86.272]
 
 # Number of stocks to purchase
 num_stocks_to_buy = 2
@@ -33,14 +34,14 @@ num_stocks_to_buy = 2
 purchase_budget = 80.0
 
 # TODO: Add the constants to the model object.
-# Hint: Add the constant average_returns to the model object and name it returns.
-# Hint: Add the constant num_stocks_to_buy to the model object and name it capacity.
-# Hint: Add the constant daily_prices to the model object and name it prices.
-# Hint: Add the constant purchase_budget to the model object and name it budget.
+# Hint: Add the constant `average_returns` to the model object and name it `returns`.
+# Hint: Add the constant `num_stocks_to_buy` to the model object and name it `capacity`.
+# Hint: Add the constant `daily_prices` to the model object and name it `prices`.
+# Hint: Add the constant `purchase_budget` to the model object and name it `budget`.
 
 
-# TODO: Define the binary variable and store it in stocks.
-# Hint: use len() to get the total number of binary variables.
+# TODO: Define the binary variable and store it in `stocks`.
+# Hint: use `len()` to get the total number of binary variables.
 
 
 # TODO: Set the objective function: maximize the total return of the portfolio.
@@ -54,7 +55,7 @@ purchase_budget = 80.0
 
 # Process and print solution
 print("\nPart 2 solution: Test the initial state of portfolio optimization using binary variables\n")
-"""Read in initial state returned using .state(0) and display solution."""
+"""Read in initial state returned using `.state(0)` and display solution."""
 
 # TODO: Lock the model using a context manager.
 
@@ -62,14 +63,14 @@ print("\nPart 2 solution: Test the initial state of portfolio optimization using
     # TODO: Define the number of states (test only one state) 
     
 
-    # TODO: Provide the following initial state: [0,0,0,1,1,0,0,0,0,0]
+    # TODO: Provide the following initial state: [0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
     # Hint: Use the `set_state()` method to assign the specifcied state to its index. 
     
 
-    # TODO: Return the initial state for the binary variable symbol and store it in stocks_state.
+    # TODO: Return the initial state for the binary variable symbol and store it in `stocks_state`.
     
 
-    # TODO: Return the objective value of the initial state and store it in objective_value.
+    # TODO: Return the objective value of the initial state and store it in `objective_value`.
     
 
     selected_indices = [i for i, val in enumerate(stocks_state) if round(val) == 1]
@@ -81,7 +82,7 @@ print("\nPart 2 solution: Test the initial state of portfolio optimization using
     print(f"Selected stocks: {selected_stockcodes}")
 
     # Check the feasibility of the initial state.
-    # TODO: Determine the feasibility status of the initial state, and store it in model_feasibility.
+    # TODO: Determine the feasibility status of the initial state and store it in `model_feasibility`.
     
 
     print(f"Model feasible: {model_feasibility}")

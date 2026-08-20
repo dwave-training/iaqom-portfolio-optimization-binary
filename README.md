@@ -63,7 +63,7 @@ Open `po_binary_initial_state.py`.
       
       a. Define the number of states. In this case, only one state is being tested.
       
-      b. Provide the following initial state `[0,0,0,1,1,0,0,0,0,0]`. This is a vector of 10 binary variables that is chosen randomly and satisfies the constraints. Remember to use the `set_state()` method to assign the specifcied state to its index.
+      b. Provide the following initial state `[0, 0, 0, 1, 1, 0, 0, 0, 0, 0]`. This is a vector of 10 binary variables that is chosen randomly and satisfies the constraints. Remember to use the `set_state()` method to assign the specified state to its index.
       
       c. Return the initial state for the binary variable symbol and store it in `stocks_state`.
       
