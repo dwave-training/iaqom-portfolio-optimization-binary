@@ -41,7 +41,7 @@ purchase_budget = 80.0
 
 
 # TODO: Define the binary variable and store it in `stocks`.
-# Hint: use `len()` to get the total number of binary variables.
+# Hint: use `len` to get the total number of binary variables.
 
 
 # TODO: Set the objective function: maximize the total return of the portfolio.
@@ -55,7 +55,7 @@ purchase_budget = 80.0
 
 # Process and print solution
 print("\nPart 2 solution: Test the initial state of portfolio optimization using binary variables\n")
-"""Read in the initial state returned using `.state(0)` and display the solution."""
+"""Read in the initial state returned using `state(0)` and display the solution."""
 
 # TODO: Lock the model using a context manager.
 
@@ -64,7 +64,7 @@ print("\nPart 2 solution: Test the initial state of portfolio optimization using
     
 
     # TODO: Provide the following initial state: `[0, 0, 0, 1, 1, 0, 0, 0, 0, 0]`
-    # Hint: Use the `set_state()` method to assign the specifcied state to its index. 
+    # Hint: Use the `set_state` method to assign the specified state to its index. 
     
 
     # TODO: Return the initial state for the binary variable symbol and store it in `stocks_state`.

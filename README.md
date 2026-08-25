@@ -28,9 +28,9 @@ Open `po_binary_constraints.py`.
       - Add `daily_prices` to the model object and name it `prices`.
       - Add `purchase_budget` to the model object and name it `budget`.
    
-   4. Define the binary decision variable and store it in `stocks`. Use `len()` to determine the total number of binary variables.
+   4. Define the binary decision variable and store it in `stocks`. Use `len` to determine the total number of binary variables.
 
-   5. Define the objective function to maximize the total return of the portfolio.
+   5. Define the following objective function to maximize the total return of the portfolio:
 
    ```math
    \min \left[-
@@ -55,15 +55,15 @@ For exercise 2, provide an initial state to test the code.
 Start with the work completed in exercise 1. Create the model object, add the constants to the model, define the decision variable, set the objective function, and add the two constraints. Then, provide an initial state.
 
 
-Open `po_binary_initial_state.py`.
+Modify `po_binary_initial_state.py` as follows:
 
    1. Repeat steps 1 to 7 of exercise 1. You may copy all the work you submitted in `po_binary_constraints.py`.
    
-   2. Lock the model using a context manager. Include the following steps in the block:
+   2. Lock the model using a context manager and include the following steps in the block:
       
       a. Define the number of states. In this case, only one state is being tested.
       
-      b. Provide the following initial state `[0, 0, 0, 1, 1, 0, 0, 0, 0, 0]`. This is a vector of 10 binary variables that is chosen randomly and satisfies the constraints. Remember to use the `set_state()` method to assign the specified state to its index.
+      b. Provide the following initial state `[0, 0, 0, 1, 1, 0, 0, 0, 0, 0]`, a vector of 10 binary variables. The vector is chosen randomly and satisfies the constraints. Remember to use the `set_state` method to assign the specified state to its index.
       
       c. Return the initial state for the binary variable symbol and store it in `stocks_state`.
       
@@ -86,10 +86,10 @@ Open `po_binary_submit.py`.
 
    3. Instantiate the nonlinear sampler and name it `sampler`.
    
-   4. Submit the nonlinear model to the Stride hybrid solver. Label your problem "Portfolio_Binary" using the `label` parameter. This label will show in your Leap dashboard when you submit your problem. Note that this label is case sensitive and uses an underscore.
+   4. Submit the nonlinear model to the Stride hybrid solver. Label your problem "Portfolio_Binary" using the `label` parameter. The label is case-sensitive and uses an underscore. When you submit your problem, the label displays on your Leap dashboard.
 
    5. Return the best solution for the binary variable symbol and store it in `stocks_state`.
 
-   6. Return the objective value of the best solution and store it in `objective_value`.
+   6. Return the best solution's objective value and store it in `objective_value`.
 
-   7. Determine the feasibility status of the best solution and store it in `model_feasibility`.
+   7. Determine the best solution's feasibility status and store it in `model_feasibility`.

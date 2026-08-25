@@ -6,8 +6,8 @@ Requirements:
         - The cost of the purchased stocks cannot exceed a certain budget.
 Given constants:
     stockcodes (list): List of stocks under consideration.
-    average_returns (list): List of average monthly returns for each stock in stockcodes.
-    daily_prices (list): List of current daily price for each stock in stockcodes.
+    average_returns (list): List of average monthly returns for each stock in `stockcodes`.
+    daily_prices (list): List of current daily price for each stock in `stockcodes`.
     num_stocks_to_buy (int): Number of stocks to purchase.
     purchase_budget (float): Budget for purchase.
 """
@@ -41,7 +41,7 @@ purchase_budget = 80.0
 
 
 # TODO: Define the binary variable and store it in `stocks`.
-# Hint: Use `len()` to get the total number of binary variables.
+# Hint: Use `len` to get the total number of binary variables.
 
 
 # TODO: Set the objective function: maximize the total return of the portfolio.
@@ -59,12 +59,12 @@ purchase_budget = 80.0
 # TODO: Instantiate the nonlinear sampler and name it `sampler`.
 
 
-# TODO: Submit the nonlinear model to the Stride hybrid solver. Use the label "Portfolio_Binary", which is case sensitive and uses an underscore.
+# TODO: Submit the nonlinear model to the Stride hybrid solver. Use the label "Portfolio_Binary", which is case-sensitive and uses an underscore.
 
 
 # Process and print solution
 print("\nPart 3 solution: Submit the portfolio optimization problem to the Stride hybrid solver using binary variables\n")
-"""Read in the solution returned using `.state(0)` and display solution."""
+"""Read in the solution returned using `state(0)` and display solution."""
 
 # TODO: Return the best solution for the binary variable symbol and store it in `stocks_state`.
 

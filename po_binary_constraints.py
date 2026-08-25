@@ -6,8 +6,8 @@ Requirements:
         - The cost of the purchased stocks cannot exceed a certain budget.
 Given constants:
     stockcodes (list): List of stocks under consideration.
-    average_returns (list): List of average monthly returns for each stock in stockcodes.
-    daily_prices (list): List of current daily price for each stock in stockcodes.
+    average_returns (list): List of average monthly returns for each stock in `stockcodes`.
+    daily_prices (list): List of current daily price for each stock in `stockcodes`.
     num_stocks_to_buy (int): Number of stocks to purchase.
     purchase_budget (float): Budget for purchase.
 """
@@ -41,7 +41,7 @@ purchase_budget = 80.0
 
 
 # TODO: Define the binary variable and store it in `stocks`.
-# Hint: Use `len()` to get the total number of binary variables.
+# Hint: Use `len` to get the total number of binary variables.
 
 
 # TODO: Set the objective function: maximize the total return of the portfolio.
