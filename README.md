@@ -22,11 +22,11 @@ Open `po_binary_constraints.py`.
 
    2. Create a nonlinear model object called `model`.
 
-   3. Add the constants to the model object.
-      - Add `average_returns` to the model object and name it `returns`.
-      - Add `num_stocks_to_buy` to the model object and name it `capacity`.
-      - Add `daily_prices` to the model object and name it `prices`.
-      - Add `purchase_budget` to the model object and name it `budget`.
+   3. Add the following constants to the model object:
+      - `average_returns` and name it `returns`.
+      - `num_stocks_to_buy` and name it `capacity`.
+      - `daily_prices` and name it `prices`.
+      - `purchase_budget` and name it `budget`.
    
    4. Define the binary decision variable and store it in `stocks`. Use `len` to determine the total number of binary variables.
 
