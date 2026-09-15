@@ -73,7 +73,7 @@ print("\nPart 2 solution: Test the initial state of portfolio optimization using
     # TODO: Return the objective value of the initial state and store it in `objective_value`.
     
 
-    selected_indices = [i for i, val in enumerate(stocks_state) if round(val) == 1]
+    selected_indices = [i for i, val in enumerate(stocks_state) if val == 1]
     selected_stockcodes = [stockcodes[i] for i in selected_indices]
 
     print(f"Objective value of the initial state: {objective_value:.6f}")
