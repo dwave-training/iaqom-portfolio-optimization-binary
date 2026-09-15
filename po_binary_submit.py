@@ -72,7 +72,7 @@ print("\nPart 3 solution: Submit the portfolio optimization problem to the Strid
 # TODO: Return the objective value of the best solution and store it in `objective_value`.
 
 
-selected_indices = [i for i, val in enumerate(stocks_state) if round(val) == 1]
+selected_indices = [i for i, val in enumerate(stocks_state) if val == 1]
 selected_stockcodes = [stockcodes[i] for i in selected_indices]
 
 print(f"Objective value of the best solution: {objective_value:.6f}")
